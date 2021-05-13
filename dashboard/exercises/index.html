@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercises</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="dashboard-main">
+    <div class="dashboard-main__nav">
+      <ul>
+        <li>
+          <i class="material-icons">dashboard</i
+          ><a href="../daily_log/daily_log.html">My Daily Log</a>
+        </li>
+        <li>
+          <i class="material-icons">local_dining</i><a href="../foods/foods.html">Foods</a>
+        </li>
+        <li class="active">
+          <i class="material-icons">fitness_center</i
+          ><a href="#">Exercise</a>
+        </li>
+        <li>
+          <i class="material-icons">trending_down</i
+          ><a href="../myMeasurements/measurements.html">My Measurements</a>
+        </li>
+        <li>
+          <i class="material-icons">spa</i
+          ><a href="../nutrition/nutrition.html">My Nutrition & Wellness</a>
+        </li>
+        <li>
+          <i class="material-icons">people</i><a href="../comunity/comunity.html">Community</a>
+        </li>
+        <hr />
+        <li>
+          <i class="material-icons">lightbulb_outline</i
+          ><a href="#home">Analysis</a>
+        </li>
+        <li>
+          <i class="material-icons">library_books</i
+          ><a href="#home">KetoGenius Diet Plan</a>
+        </li>
+        <li>
+          <i class="material-icons">list</i
+          ><a href="#home">Recipes and Meal Plans</a>
+        </li>
+        <li>
+          <i class="material-icons">today</i><a href="#home">Meal Planner</a>
+        </li>
+        <li>
+          <i class="material-icons">print</i><a href="#home">Reports</a>
+        </li>
+        <hr />
+        <li>
+          <i class="material-icons">stars</i><a href="#home">Go Premium</a>
+        </li>
+        <li>
+          <i class="material-icons">settings</i><a href="#home">Settings</a>
+        </li>
+        <li>
+          <i class="material-icons">lightbulb_outline</i
+          ><a href="#home">Getting Started</a>
+        </li>
+        <li>
+          <i class="material-icons">school</i
+          ><a href="#home">Learn About Keto</a>
+        </li>
+        <li>
+            <i class="material-icons">logout</i
+            ><a href="../../index.html">Logout</a>
+          </li>
+      </ul>
+    </div>
+    <!-- janak day1 exercise page -->
+    <div class="exercise">
+        <div class="exercise__navigation">
+          <button class="exercise__navigation__cardio-btn" value="cardio">
+            <i class="material-icons">directions_run</i>
+            <p>CARDIO</p>
+          </button>
+
+          <button class="exercise__navigation__weights-btn" value="weights">
+            <i class="material-icons">fitness_center</i>
+            <p>WEIGHTS</p>
+          </button>
+
+          <button class="exercise__navigation__quickFind-btn" value="quickFind">
+            <i class="material-icons">grade</i>
+            <p>QUICK FIND</p>
+          </button>
+
+          <button class="exercise__navigation__myExercises-btn" value="myExercises">
+            <i class="material-icons">face</i>
+            <p>MY EXERCISES</p>
+          </button>
+
+          <button class="exercise__navigation__say-btn" value="say">
+            <i class="material-icons">mode_comment</i>
+            <p>SAY</p>
+          </button>
+
+          <button class="exercise__navigation__quickEntry-btn" value="quickEntry">
+            <i class="material-icons">whatshot</i>
+            <p>QUICK ENTRY</p>
+          </button>
+        </div>
+  
+        <div id="cardio" class="exercise__content exercise__content--cardio">
+            <!-- <input placeholder="search" class="cardio__input"/> -->
+            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="search" 
+                class="cardio__input" title="Type in a name">
+            <ul id="myUL">
+                <li><a href="#">Burpees</a></li>
+                <li><a href="#">Jump Rope</a></li>
+                <li><a href="#">Jumping Jacks</a></li>
+                <li><a href="#">Squat Jumps</a></li>
+                <li><a href="#">High Knees</a></li>
+                <li><a href="#">Kettlebell Swing</a></li>
+                <li><a href="#">Kickboxing</a></li>
+                <li><a href="#">Dancing</a></li>
+                <li><a href="#">Running the Stairs</a></li>
+                <li><a href="#">Power Walking</a></li>
+                <li><a href="#">Cycling</a></li>
+                <li><a href="#">Hiking</a></li>
+                <li><a href="#">Swimming</a></li>
+                <li><a href="#">Trampoline-ing</a></li>
+                <li><a href="#">Jogging in Place</a></li>
+                <li><a href="#">Hula - Hopping</a></li>
+                <li><a href="#">Bear Plank Shoulder Tap</a></li>
+                <li><a href="#">Plank Get-Up</a></li>
+                <li><a href="#">Bear Crawl</a></li>
+                <li><a href="#">Half Turkish Get-Up</a></li>
+                <li><a href="#">Single-Arm Kettlebell Push Press</a></li>
+                <li><a href="#">Kettlebell Deadlift to Squat Clean</a></li>
+            </ul>
+        </div>
+
+        <div
+          id="weights"
+          class="exercise__content exercise__content--in-weights"
+        >
+        <input placeholder="search" class="cardio__input"/>
+            <div class="exercise__content__weights">
+                <button class="weight__button_muscles">MUSCLES</button>
+                <button class="weight__button_equipment">EQUIPMENT</button>
+            </div>
+            
+            <div class="crunchesDiv">
+                <img src="https://img.youtube.com/vi/i-xRzmPWxaw/default.jpg" class="btnImg"/>
+                <button id="myBtn">Crunches</button>
+
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="nav">
+                        <span class="close">&times;</span>
+                        <p>Crunches</p>
+                    </div>
+                    <div class="imgDiv">
+                        <img src="https://app.carbmanager.com/statics/lifting/Crunch-Front-021316.gif"/>
+                        <img src="https://app.carbmanager.com/statics/lifting/Crunch-Side-021316.gif"/>
+                    </div>
+                    <div class="text">
+                        <h3>Primary muscles:<span>Abdominals</span></h3>
+                        <h3>Difficulty:<span>Beginner</span></h3>
+                        <h3>Equipment:<span>bodyweight</span></h3>
+                        <ol class="orderedList">
+                            <li>Lay flat on your back with your knees bent and your feet flat on the ground, about a foot from your lower back.</li>
+                            <li>Place your fingertips on your temples with your palms facing out.</li>
+                            <li>Draw your belly into the base of your spine to engage the muscles, then raise your head and shoulders off the floor. Return to starting position and repeat.</li>
+                        </ol>
+                    </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="crunchesDiv">
+                <img src="https://img.youtube.com/vi/i-xRzmPWxaw/default.jpg" class="btnImg"/>
+                <button id="myBtn1">Forearm Plank</button>
+
+                <!-- The Modal -->
+                <div id="myModal1" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="nav">
+                        <span class="close1">&times;</span>
+                        <p>Forearm Plank</p>
+                    </div>
+                    <div class="imgDiv">
+                        <img src="https://app.carbmanager.com/statics/lifting/female-plank-front.gif"/>
+                        <img src="https://app.carbmanager.com/statics/lifting/female-plank-side.gif"/>
+                    </div>
+                    <div class="text">
+                        <h3>Primary muscles:<span>Abdominals</span></h3>
+                        <h3>Difficulty:<span>Beginner</span></h3>
+                        <h3>Equipment:<span>bodyweight</span></h3>
+                        <ol class="orderedList">
+                            <li>Lay flat on your back with your knees bent and your feet flat on the ground, about a foot from your lower back.</li>
+                            <li>Place your fingertips on your temples with your palms facing out.</li>
+                            <li>Draw your belly into the base of your spine to engage the muscles, then raise your head and shoulders off the floor. Return to starting position and repeat.</li>
+                        </ol>
+                    </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="crunchesDiv">
+                <img src="https://img.youtube.com/vi/i-xRzmPWxaw/default.jpg" class="btnImg"/>
+                <button id="myBtn2">Seated Calf Raises</button>
+
+                <!-- The Modal -->
+                <div id="myModal2" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="nav">
+                        <span class="close2">&times;</span>
+                        <p>Seated Calf Raises</p>
+                    </div>
+                    <div class="imgDiv">
+                        <img src="https://app.carbmanager.com/statics/lifting/SeatedCalfRaises-Front-021316.gif"/>
+                        <img src="https://app.carbmanager.com/statics/lifting/SeatedCalfRaises-side-021316.gif"/>
+                    </div>
+                    <div class="text">
+                        <h3>Primary muscles:<span>Abdominals</span></h3>
+                        <h3>Difficulty:<span>Beginner</span></h3>
+                        <h3>Equipment:<span>bodyweight</span></h3>
+                        <ol class="orderedList">
+                            <li>Lay flat on your back with your knees bent and your feet flat on the ground, about a foot from your lower back.</li>
+                            <li>Place your fingertips on your temples with your palms facing out.</li>
+                            <li>Draw your belly into the base of your spine to engage the muscles, then raise your head and shoulders off the floor. Return to starting position and repeat.</li>
+                        </ol>
+                    </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="crunchesDiv">
+                <img src="https://img.youtube.com/vi/i-xRzmPWxaw/default.jpg" class="btnImg"/>
+                <button id="myBtn3">Barbel Waist Curls</button>
+
+                <!-- The Modal -->
+                <div id="myModal3" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="nav">
+                        <span class="close3">&times;</span>
+                        <p>Barbel Waist Curls</p>
+                    </div>
+                    <div class="imgDiv">
+                        <img src="https://app.carbmanager.com/statics/lifting/female-barbell-wrist-curl-front.gif"/>
+                        <img src="https://app.carbmanager.com/statics/lifting/female-barbell-wrist-curl-side.gif"/>
+                    </div>
+                    <div class="text">
+                        <h3>Primary muscles:<span>Abdominals</span></h3>
+                        <h3>Difficulty:<span>Beginner</span></h3>
+                        <h3>Equipment:<span>bodyweight</span></h3>
+                        <ol class="orderedList">
+                            <li>Lay flat on your back with your knees bent and your feet flat on the ground, about a foot from your lower back.</li>
+                            <li>Place your fingertips on your temples with your palms facing out.</li>
+                            <li>Draw your belly into the base of your spine to engage the muscles, then raise your head and shoulders off the floor. Return to starting position and repeat.</li>
+                        </ol>
+                    </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="crunchesDiv">
+                <img src="https://img.youtube.com/vi/i-xRzmPWxaw/default.jpg" class="btnImg"/>
+                <button id="myBtn4">Glute Bridge</button>
+
+                <!-- The Modal -->
+                <div id="myModal4" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="nav">
+                        <span class="close4">&times;</span>
+                        <p>Glute Bridge</p>
+                    </div>
+                    <div class="imgDiv">
+                        <img src="https://app.carbmanager.com/statics/lifting/GlutesBridge-Front-021316.gif"/>
+                        <img src="https://app.carbmanager.com/statics/lifting/GluteBridges-Side-021316.gif"/>
+                    </div>
+                    <div class="text">
+                        <h3>Primary muscles:<span>Abdominals</span></h3>
+                        <h3>Difficulty:<span>Beginner</span></h3>
+                        <h3>Equipment:<span>bodyweight</span></h3>
+                        <ol class="orderedList">
+                            <li>Lay flat on your back with your knees bent and your feet flat on the ground, about a foot from your lower back.</li>
+                            <li>Place your fingertips on your temples with your palms facing out.</li>
+                            <li>Draw your belly into the base of your spine to engage the muscles, then raise your head and shoulders off the floor. Return to starting position and repeat.</li>
+                        </ol>
+                    </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="crunchesDiv">
+                <img src="https://img.youtube.com/vi/i-xRzmPWxaw/default.jpg" class="btnImg"/>
+                <button id="myBtn5">Leg Raises</button>
+
+                <!-- The Modal -->
+                <div id="myModal5" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="nav">
+                        <span class="close5">&times;</span>
+                        <p>Leg Raises</p>
+                    </div>
+                    <div class="imgDiv">
+                        <img src="https://app.carbmanager.com/statics/lifting/female-leg-raises-front.gif"/>
+                        <img src="https://app.carbmanager.com/statics/lifting/female-leg-raises-side.gif"/>
+                    </div>
+                    <div class="text">
+                        <h3>Primary muscles:<span>Abdominals</span></h3>
+                        <h3>Difficulty:<span>Beginner</span></h3>
+                        <h3>Equipment:<span>bodyweight</span></h3>
+                        <ol class="orderedList">
+                            <li>Lay flat on your back with your knees bent and your feet flat on the ground, about a foot from your lower back.</li>
+                            <li>Place your fingertips on your temples with your palms facing out.</li>
+                            <li>Draw your belly into the base of your spine to engage the muscles, then raise your head and shoulders off the floor. Return to starting position and repeat.</li>
+                        </ol>
+                    </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="crunchesDiv">
+                <img src="https://img.youtube.com/vi/i-xRzmPWxaw/default.jpg" class="btnImg"/>
+                <button id="myBtn6">Fore Arm Curls</button>
+
+                <!-- The Modal -->
+                <div id="myModal6" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="nav">
+                        <span class="close6">&times;</span>
+                        <p>Fore Arm Curls</p>
+                    </div>
+                    <div class="imgDiv">
+                        <img src="https://app.carbmanager.com/statics/lifting/ForearmCurls-Front-021316.gif"/>
+                        <img src="https://app.carbmanager.com/statics/lifting/ForearmCurls-Side-021316.gif"/>
+                    </div>
+                    <div class="text">
+                        <h3>Primary muscles:<span>Abdominals</span></h3>
+                        <h3>Difficulty:<span>Beginner</span></h3>
+                        <h3>Equipment:<span>bodyweight</span></h3>
+                        <ol class="orderedList">
+                            <li>Lay flat on your back with your knees bent and your feet flat on the ground, about a foot from your lower back.</li>
+                            <li>Place your fingertips on your temples with your palms facing out.</li>
+                            <li>Draw your belly into the base of your spine to engage the muscles, then raise your head and shoulders off the floor. Return to starting position and repeat.</li>
+                        </ol>
+                    </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="crunchesDiv">
+                <img src="https://img.youtube.com/vi/i-xRzmPWxaw/default.jpg" class="btnImg"/>
+                <button id="myBtn7">Dumbbell Row</button>
+
+                <!-- The Modal -->
+                <div id="myModal7" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="nav">
+                        <span class="close7">&times;</span>
+                        <p>Dumbbell Row</p>
+                    </div>
+                    <div class="imgDiv">
+                        <img src="https://app.carbmanager.com/statics/lifting/ForearmCurls-Front-021316.gif"/>
+                        <img src="https://app.carbmanager.com/statics/lifting/ForearmCurls-Side-021316.gif"/>
+                    </div>
+                    <div class="text">
+                        <h3>Primary muscles:<span>Abdominals</span></h3>
+                        <h3>Difficulty:<span>Beginner</span></h3>
+                        <h3>Equipment:<span>bodyweight</span></h3>
+                        <ol class="orderedList">
+                            <li>Lay flat on your back with your knees bent and your feet flat on the ground, about a foot from your lower back.</li>
+                            <li>Place your fingertips on your temples with your palms facing out.</li>
+                            <li>Draw your belly into the base of your spine to engage the muscles, then raise your head and shoulders off the floor. Return to starting position and repeat.</li>
+                        </ol>
+                    </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="crunchesDiv">
+                <img src="https://img.youtube.com/vi/i-xRzmPWxaw/default.jpg" class="btnImg"/>
+                <button id="myBtn7">Pull Up's</button>
+
+                <!-- The Modal -->
+                <div id="myModal7" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="nav">
+                        <span class="close7">&times;</span>
+                        <p>Pull Up's</p>
+                    </div>
+                    <div class="imgDiv">
+                        <img src="https://app.carbmanager.com/statics/lifting/ForearmCurls-Front-021316.gif"/>
+                        <img src="https://app.carbmanager.com/statics/lifting/ForearmCurls-Side-021316.gif"/>
+                    </div>
+                    <div class="text">
+                        <h3>Primary muscles:<span>Abdominals</span></h3>
+                        <h3>Difficulty:<span>Beginner</span></h3>
+                        <h3>Equipment:<span>bodyweight</span></h3>
+                        <ol class="orderedList">
+                            <li>Lay flat on your back with your knees bent and your feet flat on the ground, about a foot from your lower back.</li>
+                            <li>Place your fingertips on your temples with your palms facing out.</li>
+                            <li>Draw your belly into the base of your spine to engage the muscles, then raise your head and shoulders off the floor. Return to starting position and repeat.</li>
+                        </ol>
+                    </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="crunchesDiv">
+                <img src="https://img.youtube.com/vi/i-xRzmPWxaw/default.jpg" class="btnImg"/>
+                <button id="myBtn8">Dead Lift</button>
+
+                <!-- The Modal -->
+                <div id="myModal8" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="nav">
+                        <span class="close8">&times;</span>
+                        <p>Dead Lift</p>
+                    </div>
+                    <div class="imgDiv">
+                        <img src="https://app.carbmanager.com/statics/lifting/female-deadlift-front.gif"/>
+                        <img src="https://app.carbmanager.com/statics/lifting/female-deadlift-side.gif"/>
+                    </div>
+                    <div class="text">
+                        <h3>Primary muscles:<span>Abdominals</span></h3>
+                        <h3>Difficulty:<span>Beginner</span></h3>
+                        <h3>Equipment:<span>bodyweight</span></h3>
+                        <ol class="orderedList">
+                            <li>Lay flat on your back with your knees bent and your feet flat on the ground, about a foot from your lower back.</li>
+                            <li>Place your fingertips on your temples with your palms facing out.</li>
+                            <li>Draw your belly into the base of your spine to engage the muscles, then raise your head and shoulders off the floor. Return to starting position and repeat.</li>
+                        </ol>
+                    </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="crunchesDiv">
+                <img src="https://img.youtube.com/vi/i-xRzmPWxaw/default.jpg" class="btnImg"/>
+                <button id="myBtn8">Leg Press</button>
+
+                <!-- The Modal -->
+                <div id="myModal8" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="nav">
+                        <span class="close8">&times;</span>
+                        <p>Leg Press</p>
+                    </div>
+                    <div class="imgDiv">
+                        <img src="https://app.carbmanager.com/statics/lifting/female-deadlift-front.gif"/>
+                        <img src="https://app.carbmanager.com/statics/lifting/female-deadlift-side.gif"/>
+                    </div>
+                    <div class="text">
+                        <h3>Primary muscles:<span>Abdominals</span></h3>
+                        <h3>Difficulty:<span>Beginner</span></h3>
+                        <h3>Equipment:<span>bodyweight</span></h3>
+                        <ol class="orderedList">
+                            <li>Lay flat on your back with your knees bent and your feet flat on the ground, about a foot from your lower back.</li>
+                            <li>Place your fingertips on your temples with your palms facing out.</li>
+                            <li>Draw your belly into the base of your spine to engage the muscles, then raise your head and shoulders off the floor. Return to starting position and repeat.</li>
+                        </ol>
+                    </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="crunchesDiv">
+                <img src="https://img.youtube.com/vi/i-xRzmPWxaw/default.jpg" class="btnImg"/>
+                <button id="myBtn9">Bench Lunges</button>
+
+                <!-- The Modal -->
+                <div id="myModal9" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="nav">
+                        <span class="close9">&times;</span>
+                        <p>Bench Lunges</p>
+                    </div>
+                    <div class="imgDiv">
+                        <img src="https://app.carbmanager.com/statics/lifting/female-bench-lunges-front.gif"/>
+                        <img src="https://app.carbmanager.com/statics/lifting/female-bench-lunges-side.gif"/>
+                    </div>
+                    <div class="text">
+                        <h3>Primary muscles:<span>Abdominals</span></h3>
+                        <h3>Difficulty:<span>Beginner</span></h3>
+                        <h3>Equipment:<span>bodyweight</span></h3>
+                        <ol class="orderedList">
+                            <li>Lay flat on your back with your knees bent and your feet flat on the ground, about a foot from your lower back.</li>
+                            <li>Place your fingertips on your temples with your palms facing out.</li>
+                            <li>Draw your belly into the base of your spine to engage the muscles, then raise your head and shoulders off the floor. Return to starting position and repeat.</li>
+                        </ol>
+                    </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="crunchesDiv">
+                <img src="https://img.youtube.com/vi/i-xRzmPWxaw/default.jpg" class="btnImg"/>
+                <button id="myBtn9">Bench Press</button>
+
+                <!-- The Modal -->
+                <div id="myModal9" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="nav">
+                        <span class="close9">&times;</span>
+                        <p>Bench Press</p>
+                    </div>
+                    <div class="imgDiv">
+                        <img src="https://app.carbmanager.com/statics/lifting/female-bench-lunges-front.gif"/>
+                        <img src="https://app.carbmanager.com/statics/lifting/female-bench-lunges-side.gif"/>
+                    </div>
+                    <div class="text">
+                        <h3>Primary muscles:<span>Abdominals</span></h3>
+                        <h3>Difficulty:<span>Beginner</span></h3>
+                        <h3>Equipment:<span>bodyweight</span></h3>
+                        <ol class="orderedList">
+                            <li>Lay flat on your back with your knees bent and your feet flat on the ground, about a foot from your lower back.</li>
+                            <li>Place your fingertips on your temples with your palms facing out.</li>
+                            <li>Draw your belly into the base of your spine to engage the muscles, then raise your head and shoulders off the floor. Return to starting position and repeat.</li>
+                        </ol>
+                    </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="crunchesDiv">
+                <img src="https://img.youtube.com/vi/i-xRzmPWxaw/default.jpg" class="btnImg"/>
+                <button id="myBtn10">Dips</button>
+
+                <!-- The Modal -->
+                <div id="myModal10" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="nav">
+                        <span class="close10">&times;</span>
+                        <p>Dips</p>
+                    </div>
+                    <div class="imgDiv">
+                        <img src="https://app.carbmanager.com/statics/lifting/ChestDips-Front-021316.gif"/>
+                        <img src="https://app.carbmanager.com/statics/lifting/ChestDips-Side-021316.gif"/>
+                    </div>
+                    <div class="text">
+                        <h3>Primary muscles:<span>Abdominals</span></h3>
+                        <h3>Difficulty:<span>Beginner</span></h3>
+                        <h3>Equipment:<span>bodyweight</span></h3>
+                        <ol class="orderedList">
+                            <li>Lay flat on your back with your knees bent and your feet flat on the ground, about a foot from your lower back.</li>
+                            <li>Place your fingertips on your temples with your palms facing out.</li>
+                            <li>Draw your belly into the base of your spine to engage the muscles, then raise your head and shoulders off the floor. Return to starting position and repeat.</li>
+                        </ol>
+                    </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="crunchesDiv">
+                <img src="https://img.youtube.com/vi/i-xRzmPWxaw/default.jpg" class="btnImg"/>
+                <button id="myBtn11">Incline Dumbbell Press</button>
+
+                <!-- The Modal -->
+                <div id="myModal11" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="nav">
+                        <span class="close11">&times;</span>
+                        <p>Incline Dumbbell Press</p>
+                    </div>
+                    <div class="imgDiv">
+                        <img src="https://app.carbmanager.com/statics/lifting/DumbellCP-Front-021316.gif"/>
+                        <img src="https://app.carbmanager.com/statics/lifting/DumbbellCP-Side-021316.gif"/>
+                    </div>
+                    <div class="text">
+                        <h3>Primary muscles:<span>Abdominals</span></h3>
+                        <h3>Difficulty:<span>Beginner</span></h3>
+                        <h3>Equipment:<span>bodyweight</span></h3>
+                        <ol class="orderedList">
+                            <li>Lay flat on your back with your knees bent and your feet flat on the ground, about a foot from your lower back.</li>
+                            <li>Place your fingertips on your temples with your palms facing out.</li>
+                            <li>Draw your belly into the base of your spine to engage the muscles, then raise your head and shoulders off the floor. Return to starting position and repeat.</li>
+                        </ol>
+                    </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="quickFind" class="exercise__content exercise__content--quickFind">
+          <!-- <h2>QUICK FIND</h2> -->
+            <div class="quickFindBtnDiv">
+                <button class="quickFind__btn1" value="favorites">
+                    <p>FAVORITES</p>
+                </button>
+                <button class="quickFind__btn2" value="recent">
+                    <p>RECENTLY VIEWED</p>
+                    <div id="parent" class="parent">
+
+                    </div>
+                </button>
+                <button class="quickFind__btn3" value="frequent">
+                    <p>FREQUENT</p>
+                </button>
+            </div>
+            <div id="favorites" class="f">
+
+            </div>
+        </div>
+
+        <div id="myExercises" class="exercise__content exercise__content--myExercises">
+            <input placeholder="search" class="cardio__input"/>
+            <p class="myExercises__p1">CUSTOM</p>
+            <button class="myExercises__p2">
+                <i class="material-icons">add</i>
+                Add a Custom Cardio
+            </button>
+            <button class="myExercises__p2" id="addCustomWeights">
+                <i class="material-icons">add</i>  
+                Add a Custom Exercise
+            </button>
+            <div>
+                <div id="myModalWeights" class="modalWeights">
+                    <!-- Modal content -->
+                    <div class="modal-content-weights">
+                      <span class="close-weights">&times;</span>
+                      <h2 class="weightsText__custom">Custom Exercise</h2>
+                      <div class="weights__inputBlock">
+                          <input placeholder="Name" class="weights__nameInput" id="weights__nameInput"/>
+                          <input placeholder="Equipment" class="weights__equipmentInput" id="weights__equipmentInput"/>
+                          <input placeholder="Time" class="weights__timeInput" id="weights__timeInput"/>
+                      </div>
+                      <button class="weights__saveBtn" id="weights__saveBtn">Save</button>
+                    </div>
+                  </div>
+                  
+                  <div>
+                    <div id="taskList" class="taskList"></div>
+                  </div>
+            </div>
+        </div>
+
+        <div id="say" class="exercise__content exercise__content--say">
+            <textarea id="exerciseSay" name="exerciseSay" rows="10" cols="180" class="textAreaSay">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            </textarea>
+            <button class="saySubmitBtn">submit</button>
+            <!-- <h2>SAY</h2> -->
+        </div>
+
+        <div id="quickEntry" class="exercise__content exercise__content--quickEntry">
+            <!-- <h2>QUICK ENTRY</h2> -->
+            <div class="quickEntry">
+                <h2>Quick Entry</h2>
+                <input type="test" placeholder="Name (optional):"/>
+                <p class="minutesExercised">Minutes Exercised:
+                    <span>
+                        <i class="material-icons">remove</i> 20 <i class="material-icons">add</i>
+                    </span>
+                </p>
+                <p class="caloriesBurned">Calories Burned
+                    <span>
+                        <i class="material-icons">remove</i> 300 <i class="material-icons">add</i>
+                    </span>
+                </p>
+                <p class="steps">Steps
+                    <span>
+                        <i class="material-icons">remove</i>  0  <i class="material-icons">add</i>
+                    </span>
+                </p>
+                <p class="btnP">
+                    <button>cancel</button>
+                    <button>ok</button>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!---------- end of exercise div ------------>
+    <!---------- start of my measurements div ------------>
+    
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,376 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/****************************************** Dashboard Navigation (Nitansh)***************************************/
+
+.dashboard-main {
+    display: grid;
+    grid-template-columns: 20% 80%;
+  }
+  
+  hr {
+    border-top: 1px solid rgba(128, 128, 128, 0.445);
+  }
+  .dashboard-main__nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    overflow-y: auto;
+    height: 100vh;
+    padding-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .dashboard-main__nav li {
+    display: flex;
+    /* grid-template-columns: 20% 80%; */
+    margin: 0px auto;
+    align-items: center;
+    padding: 10px;
+  }
+  .dashboard-main__nav li a {
+    display: block;
+    color: rgba(0, 0, 0, 0.76);
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  .dashboard-main__nav li.active {
+    background-color: #cccccc;
+  }
+  
+  .dashboard-main__nav li:hover:not(.active) {
+    background-color: #cccccc;
+  }
+  
+  .dashboard-main__nav li i {
+    color: gray;
+  }
+
+/**************Daily Log (By Nitansh)***************/
+.daily-log{
+    width: 100%;
+    /* border: 1px solid gray; */
+    margin: auto;
+    overflow-y: auto;
+    height: 100vh;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+/************Daily Log Navigation (Nitansh)****************/
+.daily-log__navigation{
+    height: 50px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,25%);  
+}
+.daily-log__navigation button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #F4F4F4;
+    color: rgb(159,159,159);
+    padding-bottom: 10px; 
+}
+
+.daily-log__navigation button:first-child{
+   border-bottom : 2px solid #616161;
+    color :#616161;  
+}
+.daily-log__navigation button:first-child :placeholder-shown{
+    color : #616161;
+}
+.daily-log__navigation p{
+    font-size: 20px;
+    color: rgb(159,159,159);
+}
+/************Cotnent (Nitansh)****************/
+.daily-log__content{
+    display: none;
+    width: 95%;
+    /* border: 1px solid gray; */
+    margin: 10px auto;
+    
+}
+.daily-log__content:nth-child(2){
+    display: block; 
+}
+
+
+/************************Water content (Nitansh)**********************/
+.daily-log__content--water{
+    margin:100px auto;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.daily-log__content--water h3{
+    padding: 20px;
+    background-color: #F4F4F4;
+   
+}
+.daily-log__content--water__glasses {
+    display: grid;
+    grid-template-columns: repeat(8,auto);
+    width: 50%;
+    justify-items: center;
+    padding: 25px;
+}
+.daily-log__content--water__glasses img{
+    height: 80px;
+}
+.daily-log__content--water p{
+    padding: 20px;
+    font-size: 12px;
+}
+/************************steps content (Nitansh)**********************/
+.daily-log__content--steps{
+   width: 80%;
+    margin:50px auto;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); 
+  
+    
+}
+.daily-log__content--steps__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F4F4F4;
+    padding: 0 10px;
+}
+.daily-log__content--steps__header i {
+    cursor: pointer;
+}
+.daily-log__content--steps h3{
+    padding: 20px;
+   
+}
+.daily-log__content--steps__chart {
+   
+    display: grid;
+    grid-template-columns: 100%;
+    
+}
+
+.daily-log__content--steps p{
+    padding: 20px;
+    font-size: 12px;
+}
+/* The Modal (background) */
+.daily-log__content--steps__modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .daily-log__content--steps__modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 500px;
+    height: 300px;
+  }
+  
+  /* The Close Button */
+  .stepsModal-close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .stepsModal-close:hover,
+  .stepsModal-close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .daily-log__content--steps__modal-content #stepsformDiv{
+      
+      margin-top: 20px;
+      padding: 20px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  }
+  .daily-log__content--steps__modal-content #stepsformDiv > div{
+   margin-bottom: 20px;
+  }
+
+  .daily-log__content--steps__modal-content #stepsformDiv label{
+    width:100%;
+    display: block;
+  }
+  .daily-log__content--steps__modal-content #stepsformDiv input{
+    width:100%;
+    padding: 5px;
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid grey;
+}
+.daily-log__content--steps__modal-content #stepsformDiv button{
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    outline: none;
+    width: 150px;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 18px;
+}
+.daily-log__content--steps__modal-content #stepsformDiv button:hover{
+    background-color: white;
+    transition: 0.5s;
+    color: black;
+    border: 1px solid black;
+    font-size: 18px;
+}
+.daily-log__content--steps__modal-content #stepsformDiv button:active{
+    font-size: 16px;
+}
+/************************in depth content (Nitansh)**********************/
+.daily-log__content--in-depth{
+    width: 80%;
+    margin:50px auto;
+}
+.daily-log__content--in-depth__chart-box{
+    
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.daily-log__content--in-depth h3{
+    padding: 20px;
+    background-color: #F4F4F4;
+}
+.daily-log__content--in-depth__chart {
+    display: grid;
+    grid-template-columns: 100%;    
+}
+.daily-log__content--in-depth p{
+    padding: 20px;
+    font-size: 12px;
+}
+/***My Foods CSS(Nitansh)****/
+.daily-log__content--in-depth__table{
+    display: grid;
+    grid-template-columns: 100%;   
+    justify-content: center;
+    padding: 10px 0;
+}
+.daily-log__content--in-depth__table__row{
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    width: 90%;
+    margin:auto;
+    padding: 0 10px;
+   
+}
+.daily-log__content--in-depth__table__row:first-child{
+    font-weight: bold;
+}
+
+.daily-log__content--in-depth__table__row:nth-child(odd){
+    background-color: #EDEDED;
+}
+.daily-log__content--in-depth__table__row img{
+    width: 30px;
+    margin-top: 10px;
+    
+}
+/***Table 2 (Nitansh)**/
+
+.daily-log__content--in-depth__table-2{
+    display: grid;
+    grid-template-columns: 100%;   
+    padding: 10px 0;
+}
+
+.daily-log__content--in-depth__table-2__row{
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+    width: 90%;
+    margin:auto;
+    padding: 0 10px;
+   
+}
+
+.daily-log__content--in-depth__table-2__row:first-child{
+    font-weight: bold;
+}
+
+.daily-log__content--in-depth__table-2__row:nth-child(odd){
+    background-color: #EDEDED;
+}
+
+
+/************************My Daycontent (Nitansh)**********************/
+.daily-log__content--my-day{
+    width: 80%;
+    margin:50px auto;
+   
+}
+.daily-log__content--my-day__chart-box{
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.daily-log__content--my-day__chart {
+    display: grid;
+    grid-template-columns: 100%;    
+}
+
+/********My Meals********/
+
+.daily-log__content--my-day__my-meals{
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+.daily-log__content--my-day__my-meals__row{
+    display: grid;
+    /* grid-template-columns: repeat(5,20%); */
+    grid-template-columns: 30%  repeat(4,17.5%);
+    padding: 10px;
+    border-bottom: 1px solid rgba(197, 191, 191, 0.527);
+    background-color: #FFF8E1;
+    cursor: pointer;
+}
+.daily-log__content--my-day__my-meals__row--white{
+    background-color: white;
+}
+.daily-log__content--my-day__my-meals__row--green{
+background-color: #FFE082;
+}
+
+.daily-log__content--my-day__my-meals__row--subtotal{
+    background-color: #FFECB3;
+}
+.daily-log__content--my-day__my-meals__row--total{
+    background-color: #FFE082;
+}
+.daily-log__content--my-day__my-meals button{
+    background-color: #1BC98E;
+    color: white;
+    margin-top: 10px;
+    border: none;
+    height: 40px;
+    font-weight: bolder;
+    cursor: pointer;
+    outline: none;
+}

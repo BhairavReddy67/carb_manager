@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./comunity.css" />
+    <title>COMMUNITY</title>
+  </head>
+  <body>
+    <div class="dashboard-main">
+
+      <div class="dashboard-main__nav">
+        <ul>
+          <li>
+            <i class="material-icons">dashboard</i
+            ><a href="../daily_log/daily_log.html">My Daily Log</a>
+          </li>
+          <li>
+            <i class="material-icons">local_dining</i><a href="../foods/foods.html">Foods</a>
+          </li>
+          <li>
+            <i class="material-icons">fitness_center</i
+            ><a href="../exercises/index.html">Exercise</a>
+          </li>
+          <li>
+            <i class="material-icons">trending_down</i
+            ><a href="../myMeasurements/measurements.html">My Measurements</a>
+          </li>
+          <li>
+            <i class="material-icons">spa</i
+            ><a href="../nutrition/nutrition.html">My Nutrition & Wellness</a>
+          </li>
+          <li class="active">
+            <i class="material-icons">people</i><a href="#">Community</a>
+          </li>
+          <hr />
+          <li>
+            <i class="material-icons">lightbulb_outline</i
+            ><a href="#home">Analysis</a>
+          </li>
+          <li>
+            <i class="material-icons">library_books</i
+            ><a href="#home">KetoGenius Diet Plan</a>
+          </li>
+          <li>
+            <i class="material-icons">list</i
+            ><a href="#home">Recipes and Meal Plans</a>
+          </li>
+          <li>
+            <i class="material-icons">today</i><a href="#home">Meal Planner</a>
+          </li>
+          <li>
+            <i class="material-icons">print</i><a href="#home">Reports</a>
+          </li>
+          <hr />
+          <li>
+            <i class="material-icons">stars</i><a href="#home">Go Premium</a>
+          </li>
+          <li>
+            <i class="material-icons">settings</i><a href="#home">Settings</a>
+          </li>
+          <li>
+            <i class="material-icons">lightbulb_outline</i
+            ><a href="#home">Getting Started</a>
+          </li>
+          <li>
+            <i class="material-icons">school</i
+            ><a href="#home">Learn About Keto</a>
+          </li>
+          <li>
+            <i class="material-icons">logout</i
+            ><a href="../../index.html">Logout</a>
+          </li>
+        </ul>
+      </div>
+        <!-- Community NAVIGATION -->
+      <div class="community">
+        <div class="community__navigation">
+          <button class="community__navigation__my-day-btn" value="my-day">
+            <i class="material-icons">newsfeed_center</i>
+            <p>NEWSFEEDS</p>
+          </button>
+          <button class="community__navigation__in-depth-btn" value="in-depth">
+            <i class="material-icons">person</i>
+            <p>FRIENDS</p>
+          </button>
+          <button class="community__navigation__water-btn" value="water">
+            <i class="material-icons">star</i>
+            <p>CHALLENGES</p>
+          </button>
+          <button class="community__navigation__steps-btn" value="steps">
+            <i class="material-icons">group</i>
+            <p>GROUPS</p>
+          </button>
+          <button class="community__navigation__forum-btn" id="forumbtn" value="forum">
+            <i class="material-icons">forum</i>
+            <p>FORUM</p>
+          </button>
+          <button class="community__navigation__stories-btn" value="stories">
+            <i class="material-icons">thumb_up</i>
+            <p>STORIES</p>
+          </button>
+        </div>
+
+
+
+        <!-- NEWSFEED BLOG -->
+        <div id="my-day" class="community__content community__content--my-day">
+          <div class="newsfeed">
+            <div>
+              <div id="user_img"></div>
+              <div id="user_name"></div>
+            </div>
+            <div>
+              <div><p>This newsfeed and your profile are only visible to confirmed friends.</p></div>
+            </div>
+            <div>
+              <div>
+                <textarea id="newsfeed__comment" class="newsfeed__post" name="" id="" cols="60" rows="10" placeholder="Write Something....."></textarea>
+                <button class="newsfeed__button" id="newsfeed__post">POST</button>
+              </div>
+            </div>
+            <div id="comments"></div>
+          </div>
+        </div> 
+        <div class="newsfeed__pop" id="new__pop">
+          <div class="pop">
+            <h2>EDIT YOUR COMMENT</h2>
+            <a class="close" href="#">&times;</a>
+            <div class="pop_content">
+              <input type="text"> 
+            </div>
+          </div>
+        </div>
+
+
+        <!-- FRIENDS BLOG -->
+        <div id="in-depth" class="community__content community__content--in-depth">
+          <div class="friends">
+            <div class="friend__head">
+                <h2>My Friends & Family</h2>
+                <button class="stories__friend"><i class="material-icons">person</i><p>INVITE</p></button>
+            </div>
+            <div>
+              <p>
+                  Add friends & family for extra motivation and support. 
+                  Carb Manager friends can share and copy each others' daily logs, custom foods, recipes, and meals, send 
+                  motivational messages, and view weight loss progress (but not actual weight).
+              </p>
+              <p>
+                  This is a great way for families to plan meals and share recipes together, 
+                  and for friends to support each other!
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- CHALLENGES -->
+        <div id="water" class="community__content community__content--water">
+            <div class="challenges">
+              <div class="challenges__rule"><p>The Carb Manager Challenge is on break for a few weeks. Check back soon for a new challenge!</p></div>
+              <div><img src="https://app.carbmanager.com/statics/_1160500.png"></div>
+              <div>
+                <p>Earn points and compete with other members. Get motivated, stay a
+                      countable, and crush it with this challenge!</p>
+                <p>Here are the rules. Each Monday, a new challenge starts and runs for 4 weeks. 
+                      You can join or leave the current challenge at any point.</p>
+                <p>Earn points by logging your foods, keeping under your carb goal, hitting your macros, drinking enough water, and exercising. The top individual scorers will appear in a leaderboard. Connect with 
+                      other participants to get motivated. The maximum points per day is 130.</p>
+                <p>While we calculate your scores automatically based on what you log, there is an honor system component to
+                      this challenge. Please play fair and be honest to see your best results!</p>
+                <h3>Please be sure to apply your points at the end of each 
+                  day in the My Daily Log page — or they won't get credited!</h3>
+              </div>
+              <div>
+                <h1>Problem Statement</h1>
+                <div id="rules"></div>
+              </div>
+            </div>
+        </div>
+        <div id="steps" class="community__content community__content--steps">
+          <div class="groups">
+            <div class="groups__header">
+              <h2>Popular Groups</h2>
+              <h2>+new</h2>
+            </div>
+            <div class="groups__search">
+              <div>
+                <i class="material-icons">search</i>
+                <input type="text" placeholder="SEARCH" id="groups__content__search">
+              </div>
+            </div>
+            <div class="groups__content" id="groups__content1"></div>
+          </div>
+        </div>
+
+
+
+        <!-- forum blog -->
+        <div id="forum" class="community__content community__content--forum">
+          <div>
+            <div id="myModal" class="modal">
+  
+              <!-- Modal content -->
+              <div class="modal-content">
+                  <div class="measurementsNav">
+                    <span class="close">&times;</span>
+                    <p>UnlockAll - Go Premium</p>
+                  </div>
+                  <p class="dummyP"></p>
+                  <div class="measurements__textDiv">
+                    <img src="https://app.carbmanager.com/statics/_1160500.png" class="measurements__logo"/>
+                    <h1>Carb Manager Premium</h1>
+                    <p class="measurements__text">
+                      <img src="https://app.carbmanager.com/statics/emoji/1f331.svg"/><span>Thrive With Your Keto Lifestyle</span>
+                    </p>
+                  </div>
+                  <div>
+                    <p class="measurements__popupText">
+                      Carb Manager Premium is your one-stop keto and low carb lifestyle solution. 
+                      Featuring 360,000+ recipes, exclusive premium recipes, personalized meal plans, 
+                      a jump-start guide, a smart meal planner, automatic shopping lists, recipe 
+                      importing from the web, unlimited logging, advanced analysis & reports to make 
+                      diet tracking more effective, state-of-the-art food logging features, and third-party 
+                      fitness device integration, Carb Manager Premium is the essential tool for starting and 
+                      maintaining your keto or low carb lifestyle.
+                    </p>
+                  </div>
+                  <div class="measurements__premiumText">
+                      <p>Premium Members Report</p>
+                      <h1>3X The Results</h1>
+                  </div>
+                  <div class="measurements__exclusiveContent">
+                    <p class="exclusive__topText"><img src="https://app.carbmanager.com/statics/emoji/1f331.svg" class="leafLogo"/> Exclusive Content</p>
+                    <div class="exclusive__imgDiv">
+                      <img src="https://firebasestorage.googleapis.com/v0/b/ncache-5793d.appspot.com/o/7a56cc75-8629-4c39-e96e-f0ce75232a3d.jpeg?alt=media&token=c51a1663-084d-48c1-8a87-39d1f62e0df7"/>
+                      <img src="https://carb-manager-images-8yntkaqxqxhzphuw.netdna-ssl.com/2da1676f-2ee0-080c-d2fb-cda7892bf65a.jpeg?alt=media&token=9773cd13-a5e5-429c-8f97-d76704bad084"/>
+                      <img src="https://carb-manager-images-8yntkaqxqxhzphuw.netdna-ssl.com/413e4959-085b-8681-5685-7b75fa2e903f.jpeg?alt=media&token=e2fbb4a3-a7a3-4308-a1c1-363befc3b8c6"/>
+                      <img src="https://carb-manager-images-8yntkaqxqxhzphuw.netdna-ssl.com/b1db6521-9141-02e4-c135-a89037cc21a6.jpeg?alt=media&token=9f015cfc-6851-4b31-8faf-7c9010b0d2b8"/>
+                    </div>
+                    <p id="exclusive__botText">
+                      Keto is not only good for you — it's delicious. Our chefs in the Carb Manager Test Kitchen are cooking up the tastiest low carb and keto dishes. They're all designed to be easy to prepare, 
+                      budget friendly, and so good you won't miss the carbs.<br>
+                      We've also compiled our premium recipes into curated meal plans, designed specifically for different diets and eating preferences.
+                    </p>
+                  </div>
+                  <div class="measurements__macros">
+                    <p class="macros"><img src="https://app.carbmanager.com/statics/emoji/1f331.svg"/>360,000+ Recipes With Macros</p>
+                    <img src="https://carb-manager-images-8yntkaqxqxhzphuw.netdna-ssl.com/medium_af286839-16ae-ca19-fdd6-6f909febf304.jpeg?alt=media&token=b23cc8e3-5cb3-4d78-879a-09566fe90911"/>
+                    <p class="macros__text">
+                      Gain unlimited access to our database of thousands of keto and low carb recipes. Each recipe includes detailed nutrition info, and can be added
+                       to your daily log with one click.<br>NEW! Now you can import recipes from your favorite websites. Just copy the website address into the import 
+                       tool, and we'll make it available in the app.
+                    </p>
+                  </div>
+                  <div class="measurements__smartAnalysis">
+                    <p class="macros"><img src="https://app.carbmanager.com/statics/emoji/1f331.svg"/>Smart Analysis & Reports</p>
+                    <div class="smartAnalysis__imgDiv">
+                      <img src="https://app.carbmanager.com/statics/screen-shot-2017-06-10-at-11-34-29-am_3.png"/>
+                      <img src="https://app.carbmanager.com/statics/screen-shot-2017-06-10-at-11-38-52-am_3.png"/>
+                      <img src="https://app.carbmanager.com/statics/screen-shot-2017-06-10-at-11-43-39-am_3.png"/>
+                      <img src="https://app.carbmanager.com/statics/screen-shot-2017-06-10-at-11-38-00-am_3.png"/>
+                      <img src="https://app.carbmanager.com/statics/screen-shot-2017-06-10-at-11-44-05-am_3.png"/>
+                      <img src="https://app.carbmanager.com/statics/screen-shot-2017-06-10-at-11-41-42-am_3.png"/>
+                    </div>
+                  </div>
+                  <div class="measurements__realPeople">
+                    <p class="macros"><img src="https://app.carbmanager.com/statics/emoji/1f64c.svg"/>Real People Real Success</p>
+                    <img src="https://app.carbmanager.com/statics/erin2_orig.jpg"/>
+                    <p class="realPeople__text">
+                      "Now it is like clockwork. I input my meals and I don't have to keep track of anything because Carb Manager Premium 
+                      does that for me. It also keeps me on track and helps me make better decisions."<br>
+                      — Erin C., lost 61 pounds with Carb Manager Premium
+                    </p>
+                  </div>
+                  <div class="measurements__premiunDetails">
+                    <h3>Carb Manager Premium Details:</h3>
+                    <ul>
+                      <li>The subscription length is 1 year for USD $39.99, 3 months for $16.49, or 1 month for $8.49. All prices are in U.S. dollars.</li>
+                      <li>For iOS purchases, payment will be charged to your iTunes Account at confirmation of purchase</li>
+                      <li>The subscription automatically renews unless auto-renew is turned off at least 24-hours before the end of the current period</li>
+                      <li>Your account will be charged for renewal within 24-hours prior to the end of the current period</li>
+                      <li>Subscriptions may be managed and auto-renewal may be turned off by going to Account Settings after purchase</li>
+                      <li>Read our Privacy Policy and Terms of Use</li>
+                    </ul>
+                  </div>
+                  <div class="measurements__endBtnDiv">
+                    <button class="endBtns__BigBtn">
+                      <i class="material-icons">stars<span>MOST POPULAR</span></i><br>
+                      <!-- <P>MOST POPULAR - SAVE 60%</P><br> -->
+                      <h3>BUY 1 YEAR - $39 ($3.34/MO)</h3>
+                    </button>
+                    <div class="endBtns__smallBtn">
+                      <button>
+                        <p>3 MONTHS - $16.49 <br> ($5.50/MO)</p>
+                      </button>
+                      <button>
+                        <p>1 MONTH <br> ($8.49/MO)</p>
+                      </button>
+                    </div>
+                  </div>
+                  <p class="dummy2"></p>
+                </div>
+            
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+        <!-- STORIES BLOG -->
+        <div id="stories" class="community__content community__content--stories">
+          <div class="stories">
+            <div class="stories__head">
+                <h2>My Friends & Family</h2>
+            </div>
+            <div>
+              <p>
+                  Add friends & family for extra motivation and support. 
+                  Carb Manager friends can share and copy each others' daily logs, custom foods, recipes, and meals, send 
+                  motivational messages, and view weight loss progress (but not actual weight).
+              </p>
+              <p>
+                  This is a great way for families to plan meals and share recipes together, 
+                  and for friends to support each other!
+              </p>
+              <button class="stories__button">
+                <i class="material-icons">chat_bubble</i><p>SHARE YOUR STORIES</p></button>
+            </div>
+          </div>
+          <div class="stories__image">
+            <div>
+              <img src="https://firebasestorage.googleapis.com/v0/b/ncache-5793d.appspot.com/o/medium_a272f325-fd34-b9c9-1ab0-d83482924ae2.jpeg?alt=media&token=ce3d7319-a93e-499d-835e-c91c09c0adb8">
+              <img src="https://firebasestorage.googleapis.com/v0/b/ncache-5793d.appspot.com/o/medium_d6c04525-4ee7-a17d-d697-d34415f2d674.jpeg?alt=media&token=954a0418-ee53-41b9-89e8-e3b7c268e74a">
+              <p>MelanieO Lost 91 Pounds</p>
+            </div>
+            <div>
+              <img src="https://firebasestorage.googleapis.com/v0/b/ncache-5793d.appspot.com/o/medium_8c08a2d4-5283-7e0b-e0ae-c023b8513f9a.jpeg?alt=media&token=910f27b8-2708-4494-94bf-544c1fdd1b80">
+              <img src="https://firebasestorage.googleapis.com/v0/b/ncache-5793d.appspot.com/o/medium_c86a9803-7d37-bfbd-3114-530980f0bad4.jpeg?alt=media&token=0dd6a1d8-602a-4460-bac3-b4f16d141b2a">
+              <p>CarlosP Lost 25 Pounds</p>
+            </div>
+          </div>
+          <div class="stories__image">
+            <div>
+              <img src="https://firebasestorage.googleapis.com/v0/b/ncache-5793d.appspot.com/o/medium_c87a22a3-761b-7942-63d3-3c968ecaa6da.jpeg?alt=media&token=764ceb1f-d8dc-42f1-a493-ea1a722ba48f">
+              <img src="https://firebasestorage.googleapis.com/v0/b/ncache-5793d.appspot.com/o/medium_a8cb1073-02eb-301a-ea70-3dc8b7d9b55c.jpeg?alt=media&token=1826a2b1-f0d5-40d8-99eb-d45a7e8d9fb3">
+              <p>JacobS Lost 60 Pounds</p>
+            </div>
+            <div>
+              <img src="https://firebasestorage.googleapis.com/v0/b/ncache-5793d.appspot.com/o/medium_7a1bb087-693e-b685-d955-45cc57af3686.jpeg?alt=media&token=8afc2518-dbcc-413e-aece-67a98bd05d64">
+              <img src="https://firebasestorage.googleapis.com/v0/b/ncache-5793d.appspot.com/o/medium_7c301caa-950a-2f56-a26f-8449456092bc.jpeg?alt=media&token=9761554f-8342-4c69-8ffd-44c6783bb5f8">
+              <p>RogerW Lost 20 Pounds</p>
+            </div>
+          </div>
+          <div class="stories__image">
+            <div>
+              <img src="https://firebasestorage.googleapis.com/v0/b/ncache-5793d.appspot.com/o/medium_fc05a002-bd8d-f898-7622-1fb54b1eb0ae.jpeg?alt=media&token=41354fc8-9103-4ec1-a125-a608dc261420">
+              <img src="https://firebasestorage.googleapis.com/v0/b/ncache-5793d.appspot.com/o/medium_erin-2.jpg?alt=media&token=bee336e0-112b-4749-bb74-773d9b3cf9fa">
+              <p>ErinC Lost 61 Pounds</p>
+            </div>
+            <div>
+              <img src="https://firebasestorage.googleapis.com/v0/b/ncache-5793d.appspot.com/o/medium_8c1d3dee-c788-319f-4eb4-31730883d815.jpeg?alt=media&token=11489e0d-46da-4db0-8410-2a8119fd67a1">
+              <img src="https://firebasestorage.googleapis.com/v0/b/ncache-5793d.appspot.com/o/medium_f6d33776-eb17-4b4b-ada7-9805de796ab2.jpeg?alt=media&token=36c5b59f-718a-4fce-8855-5ea64d07de22">
+              <p>DebbieW Lost 31 Pounds</p>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+    <script src="./comunity.js"></script>
+  </body>
+</html>

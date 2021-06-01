@@ -13,9 +13,9 @@ let loginLink = document.getElementById("login-link");
 loginLink.addEventListener(
   "click",
   setDummyData(
-    "Nitansh Rastogi",
-    "nitanshtest@gmail.com",
-    "https://i.ibb.co/bPHgFpH/download-1.png"
+    "Bhairav Reddy",
+    "tbhairavreddy@gmail.com",
+    "https://bhairavreddy67.github.io/Imgaes/profile_pic.jpeg"
   )
 );
 
